@@ -130,5 +130,87 @@ main {
             address+p {font-size:1.125rem; margin-top:20px;}
         }
     }//#right_popup end
-    .visual {img{width:100%;}}
+    .visual {img{width:100%;} margin-bottom:100px;}
+    .banner {width:1200px; margin:0 auto; display:grid;
+        grid-template-columns: repeat(3,33%);
+        justify-content: space-between; padding-top:50px;
+        a {
+            img {width:100%;}
+        }
+            }//banner end
+        .best_item {width:1200px; margin:0 auto;
+            .week {
+                text-align:center; line-height: 100px;
+                font-weight:700; font-size:1.125rem; margin:50px 0;
+            }
+            .product {
+                display:grid; 
+            grid-template-columns: repeat(3,1fr);
+            column-gap:15px;
+            grid-template-rows: repeat(2);
+                li {margin-bottom:100px;
+                    .photo {
+                        img {width:100%;}
+                    }
+                    h2 {
+                        font-size:0.75rem; padding:10px 0;
+                    }
+                    .price {padding-bottom:30px;
+                        span {font-weight: 700;}
+                    }
+                    .btm {
+                        .btm_top {
+                            display:flex; flex-flow:row;
+                            justify-content:space-between;
+                            border-top:1px solid #222;
+                            padding:10px 0; font-size:0.75rem;
+                            .size {font-size:0.75rem;}
+                        .review { font-size:0.75rem; color:#ff7f50;}
+                        }
+                        span {font-size:0.75rem; padding:5px; color:$wh;}
+                        .best {
+                            background:$bestColor;
+                            margin-right:5px;
+                        }
+                        .order {
+                            background:$orderColor;
+                        }
+                    }
+                }
+            }
+        }//best_item end
+        .bg {
+            background-image:url(../images/made_img.jpg); height:300px;
+            background-size:cover; text-align: center;
+            padding-top:100px; margin-bottom:100px;
+            h2 {
+                font-size:3rem; font-weight:700; color:#fff;
+                margin-bottom:15px;
+            }
+            a {
+                color:#fff;  border:1px solid #fff;
+                padding:10px 30px; font-size: 1.125rem;
+            }
+        }
+        footer {
+            padding:50px; 
+            border:1px solid $fontColor2;
+            .ft {width:1200px; margin:0 auto; 
+                .ft_top {margin-bottom:30px;
+                    a {
+                        font-size:0.75rem; color:$fontColor2;
+                        margin-right:20px;
+                    }
+                    a:nth-child(2) {color:#000;}
+                    a:last-child {margin:0;}
+                }
+                .ft_bt {
+                    p {
+                        font-size:0.75rem; font-weight: 700;
+                        margin-bottom:5px;
+                    }
+                    p:last-child {margin:0;}
+                }
+            }
+        }
 }//main end

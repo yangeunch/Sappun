@@ -216,6 +216,131 @@ main #right_popup .contents address + p {
   font-size: 1.125rem;
   margin-top: 20px;
 }
+main .visual {
+  margin-bottom: 100px;
+}
 main .visual img {
   width: 100%;
+}
+main .banner {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: space-between;
+  padding-top: 50px;
+}
+main .banner a img {
+  width: 100%;
+}
+main .best_item {
+  width: 1200px;
+  margin: 0 auto;
+}
+main .best_item .week {
+  text-align: center;
+  line-height: 100px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 50px 0;
+}
+main .best_item .product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  grid-template-rows: repeat(2);
+}
+main .best_item .product li {
+  margin-bottom: 100px;
+}
+main .best_item .product li .photo img {
+  width: 100%;
+}
+main .best_item .product li h2 {
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
+main .best_item .product li .price {
+  padding-bottom: 30px;
+}
+main .best_item .product li .price span {
+  font-weight: 700;
+}
+main .best_item .product li .btm .btm_top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+  padding: 10px 0;
+  font-size: 0.75rem;
+}
+main .best_item .product li .btm .btm_top .size {
+  font-size: 0.75rem;
+}
+main .best_item .product li .btm .btm_top .review {
+  font-size: 0.75rem;
+  color: #ff7f50;
+}
+main .best_item .product li .btm span {
+  font-size: 0.75rem;
+  padding: 5px;
+  color: #fff;
+}
+main .best_item .product li .btm .best {
+  background: #ffe4c4;
+  margin-right: 5px;
+}
+main .best_item .product li .btm .order {
+  background: #000080;
+}
+main .bg {
+  background-image: url(../images/made_img.jpg);
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+main .bg h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+main .bg a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  font-size: 1.125rem;
+}
+main footer {
+  padding: 50px;
+  border: 1px solid #aaa;
+}
+main footer .ft {
+  width: 1200px;
+  margin: 0 auto;
+}
+main footer .ft .ft_top {
+  margin-bottom: 30px;
+}
+main footer .ft .ft_top a {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-right: 20px;
+}
+main footer .ft .ft_top a:nth-child(2) {
+  color: #000;
+}
+main footer .ft .ft_top a:last-child {
+  margin: 0;
+}
+main footer .ft .ft_bt p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+main footer .ft .ft_bt p:last-child {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
