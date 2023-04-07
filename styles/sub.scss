@@ -1,0 +1,84 @@
+//변수
+$wh:#fff;
+$border:#ff7f50;
+$fontColor:#222;
+$fontColor2:#aaa;
+$bgColor:#eee;
+$bestColor:#ffe4c4;
+$orderColor:#000080;
+$order_bar:#ff69b4;
+//전체 w 1200px
+//주문영역 w 380px
+//레이아웃 구분 배경색 적용하기
+//container의 너비값은 calc계산법 이용 380을 뺀 나머지 처리하기
+main {width:1200px; background: coral; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    .container {
+        max-width:calc(100% - 380px); 
+        background:pink;
+        .product_big {}
+        h2 {
+            font-weight:700; text-align:center; margin:30px 0;
+        }
+        .ai {display:grid; grid-template-columns: repeat(3,1fr);
+            column-gap: 10px;
+            a {
+                p {
+                    img {width:100%;}
+                }
+                h3 {font-size:0.75rem; padding:5px 0;}
+                p {
+                    em {font-weight:700; font-size:0.875rem;}
+                }
+            }
+        }//ai*3개 있음 end
+        .category {
+            a {}
+            .active {}
+        }
+        .product_img {}
+    }
+    aside {width:380px; 
+        position:sticky; top:0; padding:20px;
+        background:aqua;
+        a {
+            img {}
+        }
+        h2 {
+            padding:20px 0; font-weight:700; font-size:1.125rem;
+        }
+        dl {display:flex; flex-flow:row nowrap;
+            justify-content: space-between;
+            
+            dt {}
+            dd {
+                select {
+                    option {}
+                }
+            }
+        }
+        .order {
+            .price_wrap {
+                h2 {}
+                p {}
+            }
+            #buy {}
+            #cart {}
+            #view {}
+        }
+        .review {
+            p {}
+            a {}
+            .helper {
+                em {}
+            }
+            .box {
+                .bar {}
+            }
+        }
+        .btm {
+            p {}
+            a {}
+        }
+    }
+}

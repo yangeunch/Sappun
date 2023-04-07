@@ -1,0 +1,51 @@
+main {
+  width: 1200px;
+  background: coral;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+main .container {
+  max-width: calc(100% - 380px);
+  background: pink;
+}
+main .container h2 {
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+}
+main .container .ai {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main .container .ai a p img {
+  width: 100%;
+}
+main .container .ai a h3 {
+  font-size: 0.75rem;
+  padding: 5px 0;
+}
+main .container .ai a p em {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+main aside {
+  width: 380px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background: aqua;
+}
+main aside h2 {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+main aside dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=sub.css.map */
